@@ -32,8 +32,10 @@ git submodule update --init --recursive
 # 🖥 X11 (GUI Support)
 
 Before starting the container, allow Docker to access your display:
+Start your X11 Server
+(https://sourceforge.net/projects/vcxsrv/)
 
-```bash
+<!-- ```bash
 xhost +local:docker
 ```
 
@@ -44,7 +46,7 @@ After you are done:
 ```bash
 xhost -local:docker
 ```
-
+-->
 ---
 
 # 🐳 Docker
