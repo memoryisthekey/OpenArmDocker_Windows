@@ -1,0 +1,6 @@
+[submodule "ws/openarm_ros2"]
+	path = ws/openarm_ros2
+	url = https://github.com/enactic/openarm_ros2.git
+[submodule "ws/openarm_description"]
+	path = ws/openarm_description
+	url = https://github.com/enactic/openarm_description.git

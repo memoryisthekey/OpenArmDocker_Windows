@@ -18,7 +18,7 @@ The container automatically builds the workspace on startup via `entrypoint.sh`.
 # 📥 Git Clone with submodules 
 
 ```bash
-git clone --recurse-submodules git@gitlab.sdu.dk:sdurobotics/humanoids/openarm.git
+git clone --recurse-submodules https://github.com/memoryisthekey/OpenArmDocker_Windows.git
 ```
 
 If you forgot `--recurse-submodules`:
