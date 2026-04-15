@@ -1,0 +1,18 @@
+services:
+  humble:
+    build: .
+    image: humble_open_arm:latest
+    container_name: openarm
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      DISPLAY: host.docker.internal:0.0
+      QT_X11_NO_MITSHM: "1"
+    volumes:
+      - ./ws:/home/ros/ros2_ws/src:rw
+      - ./entrypoint.sh:/entrypoint.sh:ro
+    command: ["/bin/bash", "/entrypoint.sh"]
+    stdin_open: true
+    tty: true
